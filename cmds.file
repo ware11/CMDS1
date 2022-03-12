@@ -1,0 +1,151 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local congui2 = Instance.new("ScreenGui")
+local Frame1 = Instance.new("Frame")
+local UICorner1 = Instance.new("UICorner")
+local UIGradient1 = Instance.new("UIGradient")
+local Fram2 = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local TextButton = Instance.new("TextButton")
+local UICorner1_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextLabel_3 = Instance.new("TextLabel")
+local UIListLayout = Instance.new("UIListLayout")
+local TextBox = Instance.new("TextBox")
+local orange1 = Instance.new("Frame")
+local UIGradient_2 = Instance.new("UIGradient")
+
+--Properties:
+
+congui2.Name = "congui2"
+congui2.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+congui2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+
+Frame1.Name = "Frame1"
+Frame1.Parent = congui2
+Frame1.Active = true
+Frame1.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+Frame1.ClipsDescendants = true
+Frame1.Position = UDim2.new(0, 755, 0, 255)
+Frame1.Selectable = true
+Frame1.Size = UDim2.new(0, 555, 0, 255)
+
+UICorner1.Name = "UICorner1"
+UICorner1.Parent = Frame1
+
+UIGradient1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(134, 134, 134)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(134, 134, 134))}
+UIGradient1.Name = "UIGradient1"
+UIGradient1.Parent = Frame1
+
+Fram2.Name = "Fram2"
+Fram2.Parent = Frame1
+Fram2.Active = true
+Fram2.BackgroundColor3 = Color3.fromRGB(255, 128, 0)
+Fram2.BorderSizePixel = 0
+Fram2.ClipsDescendants = true
+Fram2.Selectable = true
+Fram2.Size = UDim2.new(0, 555, 0, 22)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 247, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 247, 0))}
+UIGradient.Parent = Fram2
+
+TextButton.Parent = Fram2
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 8, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0, 525, 0, 3)
+TextButton.Size = UDim2.new(0, 15, 0, 15)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+UICorner1_2.CornerRadius = UDim.new(0, 3)
+UICorner1_2.Name = "UICorner1"
+UICorner1_2.Parent = TextButton
+
+TextLabel.Parent = Frame1
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 180, 0, -15)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.RobotoMono
+TextLabel.Text = "COMMANDS"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 19.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = Frame1
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 180, 0, 25)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.RobotoMono
+TextLabel_2.Text = "CMDS:"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 20.000
+TextLabel_2.TextStrokeColor3 = Color3.fromRGB(255, 136, 0)
+TextLabel_2.TextWrapped = true
+
+ScrollingFrame.Parent = Frame1
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+ScrollingFrame.Position = UDim2.new(0, 180, 0, 75)
+ScrollingFrame.Size = UDim2.new(0, 200, 0, 80)
+
+TextLabel_3.Parent = ScrollingFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Size = UDim2.new(0, 200, 0, 145)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = " !id . !mute . !steal . !mute . !off . !loaddupe . !tpa . !tp . !bp . !rj"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+TextBox.Parent = Frame1
+TextBox.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+TextBox.Position = UDim2.new(0, 180, 0, 165)
+TextBox.Size = UDim2.new(0, 200, 0, 50)
+TextBox.Font = Enum.Font.Code
+TextBox.Text = "PREFIX IS ' ! ' "
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+
+orange1.Name = "orange1"
+orange1.Parent = TextBox
+orange1.Active = true
+orange1.BackgroundColor3 = Color3.fromRGB(255, 128, 0)
+orange1.BorderSizePixel = 0
+orange1.ClipsDescendants = true
+orange1.Selectable = true
+orange1.Size = UDim2.new(0, 200, 0, 3)
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 247, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 247, 0))}
+UIGradient_2.Parent = orange1
+
+-- Scripts:
+
+local function LEMYHDB_fake_script() -- Frame1.LocalScript 
+	local script = Instance.new('LocalScript', Frame1)
+
+	local HotKey = Enum.KeyCode.G-- Key to open Gui --
+	local UIS = game:GetService("UserInputService")
+	
+	UIS.InputBegan:Connect(function(Key)
+		if Key.KeyCode == HotKey then
+			script.Parent.Visible = not script.Parent.Visible
+		end
+	end)
+end
+coroutine.wrap(LEMYHDB_fake_script)()
