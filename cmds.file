@@ -139,7 +139,7 @@ UIGradient_2.Parent = orange1
 local function LEMYHDB_fake_script() -- Frame1.LocalScript 
 	local script = Instance.new('LocalScript', Frame1)
 
-	local HotKey = Enum.KeyCode.G-- Key to open Gui --
+	local HotKey = Enum.KeyCode.F3-- Key to open Gui --
 	local UIS = game:GetService("UserInputService")
 	
 	UIS.InputBegan:Connect(function(Key)
