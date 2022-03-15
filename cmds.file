@@ -64,6 +64,9 @@ TextButton.Font = Enum.Font.SourceSans
 TextButton.Text = ""
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 14.000
+TextButton.MouseButton1Click:Connect(function()
+	congui2.Enabled = false
+end)
 
 UICorner1_2.CornerRadius = UDim.new(0, 3)
 UICorner1_2.Name = "UICorner1"
